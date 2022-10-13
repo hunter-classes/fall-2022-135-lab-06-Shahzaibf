@@ -10,5 +10,6 @@ int main() {
       letter = input[i];
       std::cout << (int)letter << "\n";
     }
+    break;
   }
 }

@@ -3,3 +3,4 @@ a.out
 *.exe
 main
 tests
+test-ascii
