@@ -2,24 +2,24 @@
 #include "caesar.h"
 
 char shiftChar(char c, int rshift){
-    int newc = c + rshift;
+    int shiftedc = c + rshift;
     if(c >= 65 && c <= 90){
-        if(newc < 65){
-            return newc + 26;
+        if(shiftedc < 65){
+            return shiftedc + 26;
         }
-        if(newc > 90){
-            return newc - 26;
+        if(shiftedc > 90){
+            return shiftedc - 26;
         }
-        return newc;
+        return shiftedc;
     }
     if(c >= 97 && c <= 122){
-        if(newc < 97){
-            return newc + 26;
+        if(shiftedc < 97){
+            return shiftedc + 26;
         }
-        if(newc > 122){
-            return newc - 26;
+        if(shiftedc > 122){
+            return shiftedc - 26;
         }
-        return newc;
+        return shiftedc;
     }
     return c;
 }
