@@ -1,6 +1,7 @@
 #include <iostream>
 #include "caesar.h"
 #include "vigenere.h"
+#include "decrypt.h"
 
 int main()
 {
@@ -8,5 +9,9 @@ int main()
 
 
   std::cout << encryptVigenere("Hello, World!", "cake") << "\n";
+  
+  std::cout << decryptCaesar("Rovvy, Gybvn!", 10) << "\n";
+  std::cout << decryptVigenere("Jevpq, Wyvnd!", "cake") << "\n";
+  
   return 0;
 }
